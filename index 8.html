@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is my website"> 
+        <meta name="author" content="Ezekiel Adekunle">  
+        <title>Ezekiel's website</title>
+        <!--
+            <link href="https://fonts.googleapis.com/css?family=lobster" rel="stylesheet" type="text/css">
+        -->
+        
+        <style>
+            .red-text{
+                color:red;
+            }
+
+            p{
+                font-size:30px;
+                font-family:monospace;
+            }
+
+            h1{
+                font-family:lobster;
+            }
+
+            .smaller-image{
+                width:200px;  
+            }
+
+            .thick-black-border{
+                border-color:black;
+                border-width:10px;
+                border-style:solid; 
+                border-radius:50%;
+            }
+
+            .silver-background{
+                background-color:silver;
+            }
+
+            #cat-photo-form{
+                background-color:gold;   
+            }
+
+            .injected-text{
+                margin-bottom:-25px;
+                text-align:center;
+            }
+
+            .box{
+                border-style:solid;
+                border-color:black;
+                border-width:5px;
+                text-align:center;
+            }
+
+            .yellow-box{
+                background-color:yellow;
+                padding:10px;
+            }
+
+            .red-box{
+                background-color:crimson;
+                color:#fff;
+                padding:1.5em;
+                
+            }
+
+            .blue-box{
+                background-color:blue;
+                color:#fff;
+                padding:40px 20px 20px 40px;
+                margin:40px 20px 20px 40px;
+            }
+
+            [type='radio']{
+                margin:10px 0px 15px 0px;
+            }
+
+            body{
+                background-color:black;
+            }
+
+            img:hover{
+                animation-name:width;
+                animation-duration:3s;
+            }
+
+            @keyframes width{
+                100%{
+                    width:40px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="red-text">My Personal website</h1>
+        <h5 class="injected-text">margin</h5>
+        <div class="box yellow-box">
+            <h5 class="box red-box">padding</h5>
+            <h5 class="box blue-box">padding<h5>
+        </div>
+
+        <img  class="smaller-image thick-black-border" width="500" src="https://www.thesun.co.uk/wp-content/uploads/2017/09/nintchdbpict000352493704.jpg">
+        <div class="silver-background">
+            <p class="red-text">Things cat love:</p>
+            <ul>
+                <li>cat nip</li>
+                <li>Laser pointer</li>
+                <li>lasgna</li>
+            </ul>
+            <p class="red-text">Top things cats hate:</p>
+            <ol>
+                <li>flea treatment</li>
+                <li>Thunder</li>
+                <li>Other cats</li>
+            </ol>
+
+        </div>
+        <form id="cat-photo-form">
+            <label><input type="radio" name="indoor-outdoor" checked>indoor</label>
+            <label><input type="radio" name="indoor-outdoor">outdoor</label><br>
+            <label><input type="checkbox" name="personality" checked>loving</label>
+            <label><input type="checkbox" name="personality">lazy</label>
+            <label><input type="checkbox" name="personality">energetic</label><br>
+            <input type="text" placeholder="cat photo URL" required>
+            <button type="submit">submit</button> 
+        </form>
+
+        <textarea rows="10" cols="30" placeholder="Enter a paragraph"></textarea>   
+    </body>
+
+
+
+</html>

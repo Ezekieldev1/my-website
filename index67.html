@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="CodingMadeEasy">
+        <meta name="author" content="Adekunle Ezekiel">
+        <meta name="keywords" content="css, html, CodingMadeEasy"> 
+        <title>CodingMadeEasy</title>
+
+        <link href="https://fonts.googleapis.com/css?family=lobster" rel="stylesheet" type="text/css">
+        
+        <style>
+            body{
+                background-image:url(https://i.pinimg.com/originals/bf/67/b6/bf67b626fad5bfc1fef1f99820ddaf6c.jpg);
+                font-family:monospace;
+                color:white;
+                font-size:20px;
+            }
+
+            header{
+                background-color:#09a7a1 ;
+                color:white;
+                padding:0.25em;
+               
+            }
+
+            p{
+                text-align:justify;
+                font-size:20px;
+                line-height:30px; 
+            }
+
+            h1{
+                font-family:lobster;
+            }
+
+            h3{
+                opacity:0.7;
+                color:#09a7a1;
+            }
+
+            h2{
+                opacity:0.5;
+                color:#09a7a1;
+            }
+
+            footer{
+                background-color:#09a7a1;
+                color:white;
+                padding:0.5em;
+            }
+
+            .fullcard{
+                width:300px;
+                height:300px;
+                border:1px solid #fff;
+                border-radius:10px;
+                margin:70px 10px;
+                padding:10px;
+                background-color:#fff;
+            }
+
+            .cardContent{
+                padding:10px;
+            }
+
+           .Email{
+                color:black;
+                font-size:17px;
+            }
+
+            .password{
+                color:black;
+                font-size:17px;
+                
+            }
+
+            [type='Email']{
+                margin:10px 50px 0px 5px;
+                
+            }
+
+            [type='Password']{
+                margin:10px 50px 0px 5px;
+            }
+
+            [type='submit']{
+                background-color:dodgerblue;
+                font-family:arial;
+                color:white;
+                margin:20px 10px 0px 5px;
+                padding:0.7em;
+                width:100%;
+                border-radius:5px
+            }
+
+            [type='submit']:hover{
+                color:black;
+            }
+        
+
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Learn <em>HTML</em> in <u>two hours!</u> with <strong>Ezekiel Adekunle</strong></h1><hr>
+        </header>
+        <main>
+            <article>
+                <h2>Introduction to HTML</h2>
+                <p>Welcome to the world of code! where we make coding simplified and easy for everyone to learn.Here we have tutorials and step by step guide on web devlopment;HTML with CSS and JavaSript. First we will start with the basics, <em><strong>HTML</strong></em>.</p>
+                <h3><em>Why we reccomend you to start with HTML:</em></h3>
+                <ul>
+                    <li><strong>HTML</strong> is the skelenton of all web pages.</li>
+                    <li>It is often the first language learned by developers,marketers,and designers and is core to <em>front-end development work.</em></li> 
+                </ul>
+                <p ><em>If this is your first time touching code, we are excited for what you are about to create.</em></p><br><hr>
+                <p>So what exactly is <strong>HTML</strong>?  HTML provides structure to the content appearing on the website,such as images, text, or videos.Right-click on any page on the internet,choose <strong>"Inspect,"</strong>and you will see HTML in a panel of your screen.</p>
+                <p><strong>HTML</strong> stands for <em>Hyper Text MarkUp Language:</em></p>
+                <ul>
+                   <p><li>A <em>markup language</em> is a computer language that defines the structure and presentation of a raw text.</li></p>
+                    <p><li>In <strong>HTML,</strong> the computer can interpret <em>raw texts</em> that is wrapped in <strong>HTML</strong> elements.</li></p>
+                    <p><li><em>Hyper Text</em> is a text displayed on a computer or device that provdes access to other texts through links, also known as <em>hyperlinks.</em> You probably clicked on several hyperlinks on your way to this codingMadeEasy course.</li></p>
+                </ul><hr>
+                <p>Learning <strong>HTML</strong> is the first step in creating websites,but even a little knowledge can help you inject code snippets into newspapers, blog, or websites templates. As you continue learning, you will be able to layer your <strong>HTML</strong> with <strong>CSS</strong> and <strong>JavaScript</strong> to create visual compelling websites. But for now, we are going to focus on how to add and modify basic content on a page,like <em>texts,</em><em>images</em> and <em>videos.</em>Don't worry if the website looks ugly-we are just getting started.</p>
+                <p>You can sign up into our CodingMadeEasy with your <strong>google account, facebook</strong> or your <strong>Email Address</strong> to take this course for free.</p>
+                
+            </article>
+            <div class="fullcard">
+                <div class="cardContent">
+                    <div class="cardtext">
+                        <h4 style="color:black;"><strong>Take this course for free</strong></h4>
+                        <hr>
+                        <form>
+                            <label for="Email" class="Email"><em>Email:</em></label>
+                            <input type="Email" placeholder="Enter your email adress"  id="Email" required>
+                            <label for="password" class="password"><em>Password:</em><input type="Password" required></label>
+                            <input type="submit" value="Get Started">
+                        </form>
+                    </div>    
+                </div>    
+            </div>  
+        </main>
+        <br>
+        <footer>&copy;2021 CodingMadeEasy</footer>
+    </body>
+
+</html>

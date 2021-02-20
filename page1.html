@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>css grid</title>
+        <style>
+            .d1{
+                background:lightskyblue;
+                grid-area:header;
+            }
+            .d2{
+                background:LightSalmon;
+                grid-area:advert;
+            }
+            .d3{
+                background:paleturquoise;
+                grid-area:content;
+                display:grid;
+                grid-template-columns:auto 1fr;
+            }
+            .d4{
+                background:lightpink;
+                grid-area:footer;
+            }
+
+            .d5{
+                background:blue;
+                grid-area:content;
+            }
+        
+            .container{
+                font-size:1.5em;
+                min-height:300px;
+                width:100%;
+                background:lightgray;
+                display:grid;
+                grid-template-columns:1fr;
+                grid-template-rows:50px auto 1fr auto;
+                grid-gap:10px;
+                grid-template-areas:
+                "header"
+                "advert"
+                "content"
+                "footer";
+            }
+
+            @media (min-width:300px){
+                .container{
+                    grid-template-columns:auto 1fr;
+                    grid-template-rows:auto 1fr auto;
+                    grid-template-areas:
+                    "advert header"
+                    "advert content"
+                    "advert footer";
+                }
+                
+            }
+
+            @media (min-width:400px){
+                .container{
+                    grid-template-areas:
+                    "header header"
+                    "advert content"
+                    "footer footer"
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="d1">header</div>
+            <div class="d2">advert</div>
+            <div class="d3">content</div>
+            <div class="d4">footer</div>
+       </div>
+    </body>
+</html>

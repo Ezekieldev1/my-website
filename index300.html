@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="UTF-8">
+        <meta name="description" content="This is my tribute page">
+        <meta name="author" content="Adekunle Ezekiel">
+        <meta name="keywords" content="HTML, CSS, My first tribute page">
+        <title>fcc:tribute page </title>
+
+       
+        <style>
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 4px;
+            }
+
+            /* Create four equal columns that sits next to each other */
+            .column {
+                flex: 25%;
+                max-width: 25%;
+                padding: 0 4px;
+            }
+
+            .column img {
+                margin-top: 8px;
+                vertical-align: middle;
+                width: 100%;
+            }
+
+            /* Responsive layout - makes a two column-layout instead of four columns */
+            @media screen and (max-width: 800px) {
+                .column {
+                    flex: 50%;
+                    max-width: 50%;
+                }
+            }
+
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .column {
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
+
+            #img-caption{
+                font-size:30px;
+            }
+
+            .center{
+                margin:auto;
+                padding:10px;
+                width:60%;
+                text-align:center;
+            }
+
+            #tribute-link{
+                color:red;
+                font-weight:500;
+            }
+
+            h1{
+                font-style: italic;
+                font-family:helvetica;
+                font-weight: bold;
+                color:brown;
+            }
+
+            img{
+                max-width:100%;
+                height: auto;
+                display:block;
+            }
+        </style>
+  </head>
+  <body>
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      <div id="main">
+            <h1 id="title" class="center">fela Anikulapo Kuti</h1>
+            <div id="img-div">
+                <div class="row">
+                    <div class="column"></div>
+                    <div class="column">
+                        <img src="images/fela_anikolapo_kuti.jpg" alt="fela anikulapo image" id="image">
+                        <img src="images/fela-singing.jpg" alt="fela is singing" id="image">
+                    </div>
+                    <div class="column">
+                        <img src="images/fela-smoking.jpg" alt="fela smoking" id="image">
+                        <img src="images/fela-playing-a-saxophone.jpg" alt="fela anikulapo image" id="image">
+                    </div>
+                    <div class="column"></div>
+             </div>    
+                <p id="img-caption" class="center"><em>He is regarded as the pioneer of Afrobeat, an African music genre combining traditional Yoruba and Afro-Cuban music with funk and jazz.</em></p>
+            </div>
+      </div>  
+      <div id="tribute-info" class="center">
+                <p>I no be gentleman at all</p>
+                <p>I no be gentleman at all</p>
+                <p>I no be gentleman at all o</p>
+                <p>I no be gentleman at all, at all</p>
+                <p>I no be gentleman at all o!</p>
+                <p>I be Africa man original</p>
+                <p>I no be gentleman at all o!</p>
+                <p>I be Africa man original</p>
+                <p>I no be gentleman at all o!</p>
+                <p>Them call you, make you come chop</p>   
+                <p>You chop small, you say you belly full</p>
+                <p>You say you be gentleman</p>
+                <p>You go hungry</p>
+                <p>You go suffer</p>
+                <p>You go quench</p>
+                <p>Me I no be gentleman like that</p>
+                <p>I no be gentleman at all o!</p>
+                <p>I be Africa man original</p>
+                <p>I no be gentleman at all o!</p>
+                <p>I be Africa man original</p>
+                <p>I no be gentleman at all o!</p>
+                <p>I be Africa man original</p>
+                <p>I no be gentleman at all o!</p>
+                <p>You dey go your way, the jeje way</p>
+                <p>Somebody come bring original trouble</p>
+                <p>You no talk, you no act</p>
+                <p>You say you be gentleman</p>
+                <p>You go suffer</p>
+                <p>You go tire</p>
+                <p>You go quench</p>
+                <p>Me I no be gentleman like that</p>
+                <p>I no be gentleman at all o!</p>
+                <p>I be Africa man original</p>
+                <p>I no be gentleman at all o!</p>
+                <p>I be Africa man original</p>
+                <p>I no be gentleman at all o!</p>
+                <p>Africa hot, I like am so</p>
+                <p>I know what to wear but my friends don't know</p>
+                <p>Him put him socks, him put him shoe</p>
+                <p>Him put him pant, him put him singlet</p>
+                <p>Him put him trouser, him put him shirt</p>
+                <p>Him put him tie, him put him coat</p>
+                <p>Him come cover all with him hat</p>
+                <p>Him be gentleman</p>
+                <p>Him go sweat all over</p>
+                <p>Him go faint right down</p>
+                <p>Him go smell like shit</p>
+                <p>Him go piss for body, him no go know</p>
+                <p>Me I no be gentleman like that</p>
+                <p>I no be gentleman at all o!</p>
+                <p>I be Africa man original</p>
+                <p>I no be gentleman at all o!</p>
+                <p>I be Africa man original</p>
+                <p>I no be gentleman at all o!</p>
+                <p>I no be gentleman at all, at all</p>
+                <p>I no be gentleman at all o!</p>
+                <p>I be Africa man original</p>
+                <p>I no be gentleman at all o!</p>
+                <p>I be Africa man original</p>
+                <p>I no be gentleman at all o!</p> 
+      </div>
+      <div class="center">
+            <h3><a href="https://en.wikipedia.org/wiki/Fela_Kuti" target="_blank" id="tribute-link">Learn More About Fela Anikulapo Kuti</a></h3>
+      </div>
+  </body>
+</html>

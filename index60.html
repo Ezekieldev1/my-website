@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is my webpage">
+        <meta name="author" content="Adekunle Ezekiel">
+        <meta name="keywords" content="css, html, cssflexbox">
+        <title>Ezekiel's webpage</title> 
+        <style>
+            body{
+                font-family: arial, sans-serif;
+            }
+
+            header{
+                display: flex;
+                flex-direction: row;
+            }
+
+            header .profile-thumbnail{
+                width: 100px;
+                height: 100px;
+                border-radius: 5px;
+            }
+
+            header .profile-name{
+                display: flex;
+                flex-direction: column;
+                margin-left:10px;
+            }
+
+            header .follow-btn{
+                display: flex;
+                margin:0 0 0 auto;
+            }
+
+            header .follow-btn button{
+                border: 0;
+                border-radius: 3px;
+                padding: 5px;
+            }
+
+            header h3, header h4{
+                margin:0;
+                display: flex;
+            }
+
+        #inner p{
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        #inner hr{
+            margin: 20px 0;
+            border-style: solid;
+            opacity: 0.1;
+        } 
+
+        footer{
+            display: flex;
+            flex-direction: row;
+        }
+
+        footer .stats{
+            display: flex;
+            font-size: 15px;
+        }
+
+        footer .stats strong{
+            font-size: 18px;
+        }
+
+        footer .stats .likes{
+            margin-left: 10px;
+        }
+
+        footer .cta{
+            margin-left: auto;
+        }
+
+        footer .cta button{
+            border: 0;
+            background:transparent;
+        }
+
+        .d1{background:LightSkyBlue;}
+        .d2{background:LightSalmon;}
+        .d3{background:PaleTurquoise;}
+        .d4{background:LightPink;}
+        .d5{background:PaleGreen;}
+
+        .container{
+            font-size:40px;
+            width:100%;
+            background:lightgray;
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(60px, 1fr));
+            grid-template-rows:repeat(auto-fill, minmax(90px, 1fr));
+            grid-column-gap:10px;
+            grid-row-gap:5px;
+            grid-gap:10px 20px;
+            grid-column:2/5;
+            grid-row:2/4;
+            justify-self: center;
+            align-self:end;
+            justify-items: center;
+            align-items: end;
+            grid-template-areas: none;
+            grid-area: footer;
+            grid-area:3/1/4/4;
+        }
+        </style>
+    </head>
+    <body>
+      <header>
+          <img src="https://scontent.flos8-1.fna.fbcdn.net/v/t1.0-9/130913167_1034113470433132_9190235933539466603_n.jpg?_nc_cat=105&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeFLEnN7eAzQ3c3nr8t1GDrjc7cyaTRBjyNztzJpNEGPI2IU38FM1rh92ymKo8smjCKyyW_W-I-DpStEuBJvwAIu&_nc_ohc=JbHgqs2F5SwAX9_6OU2&_nc_ht=scontent.flos8-1.fna&oh=ddfe1f0c3f8e53b03ef813c51342e079&oe=6042F7D2" alt="Adekunle Ezekiel's profile picture" class="profile-thumbnail">
+          <div class="profile name">
+              <h3>Adekunle Ezekiel</h3>
+              <h4>@Adekunle</h4>
+            </div>
+            <div class="follow-btn">
+                <button>follow</button>
+            </div>
+      </header>
+      <div id="inner">
+            <p>I meet so many people who are in search of that one trick that will help them work smart. Even if you work smart, you still have to work hard.</p>
+            <span class="date">1:32 PM - 12 Jan 2018</span>
+            <hr>
+      </div>
+      <footer>
+            <div class="stats">
+                <div class="Retweets">
+                    <strong>107</strong> Retweets
+                </div>
+                <div class="likes">
+                    <strong>431</strong> Likes
+                </div>
+            </div>
+            <div class="cta">
+                <button class="share-btn">Share</button>
+                <button class="retweet-btn">Retweet</button>
+                <button class="like-btn">Like</button>
+            </div>
+            <div class="container">
+                <div class="d1">1</div>
+                <div class="d2">2</div>
+                <div class="d3">3</div>
+                <div class="d4">4</div>
+                <div class="d5">5</div>
+            </div>
+      </footer>
+    </body>
+</html>

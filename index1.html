@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="my webpage">
+        <meta name="author" content="Ezekiel Adekunle">  
+        <meta name="keywords" content="html, css">
+        <title>my webpage</title>   
+          
+        <style>
+            body{
+                background-color:hsl(180, 90%, 35%);
+                font-family:monospace,san-serif;
+                color:black;
+                min-height:150vh;
+            }
+
+            #left{
+                float:left;
+                width:50%;
+            }
+
+            #right{
+                float:right;
+                width:50%;
+            }
+
+            aside,section{
+                padding:2px;
+                background-color:#ccc;
+            }
+
+            #navbar{
+                position:fixed;
+                top:0px;
+                left:0px;
+                width:100px;
+                background-color:hsl(180, 80%, 25%);
+            }
+
+            nav ul{
+                margin:0px;
+                padding:5px 0px 5px 30px;
+            }
+
+            nav li{
+                display:block;
+                margin-right:20px;
+            }
+
+            a{
+                text-decoration:underline;
+                color:inherit;
+            }
+
+            #searchbar{
+                position:absolute;
+                top:10px;
+            }
+
+            section{
+                position:relative;
+            }
+
+            .blue-text{
+                color:blue;
+            }
+
+            h1{
+                font-size:68px;
+                font-weight:800;
+                position:relative;
+                top:15px;
+                text-indent:20px;
+                font-family:verdana;
+                padding-top:10px;
+            }
+
+
+            h3{
+                font-size:40px;
+                font-weight:500;
+            }
+                
+            h5{
+                font-size:21px;
+                font-weight:300;
+            }
+
+            h6{
+                font-size:14px;
+                font-weight:200;
+            }
+
+            p{
+                text-align:justify;
+                font-size:16px;
+                line-height:25px;
+                position:relative;
+                top:10px;
+                bottom:15px;
+
+            }
+
+            .links{
+                margin-right:20px;
+                text-align:left;
+                color:black;
+                opacity:0.7;
+            }
+
+            .fullcard{
+                width:300px;
+                border:1px solid #000;
+                border-radius:10px;
+                margin:70px 5px;
+                padding:4px;
+            }
+
+            .cardContent{
+                padding:10px;
+            }
+
+            #thumbnail{
+                box-shadow:0px 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);
+            }
+
+            a:hover{
+                color:blue;
+            }
+        </style>  
+    </head>
+    <body>
+        <h1>Ezekiel'S Homepage</h1>
+        <header>
+            <h1>welcome</h1>        
+        </header>
+        <header>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="http://en.wikipedia.org/wiki/" class="links">Homepage</a></li>
+                    <li><a href="http://en.wikipedia.org/wiki/" class="links">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <p>I shift up when the #navbar is fixed to the browser window.</p>
+        <section>
+            <form id="searchbar">
+                <label for="search">search:</label>
+                <input type="search" id="search" name="search" required>
+                <input type="submit" name="submit" value="Go!">
+            </form>
+        </section>
+
+        <div class="fullcard" id="thumbnail">
+            <div class="cardContent">
+                <div class="cardtext">
+                    <h4 class="blue-text"><s>Google</s> Alphabet</h4>
+                    <hr>
+                    <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>ph.D. students</u> at <strong>stanford university</strong>.</em></p>
+                </div>
+                <div class="cardlinks">
+                    <a href="http://en.wikipedia.org/wiki/Larry_page" target="_blank" class="links">Larry page</a><br><br>
+                    <a href="http://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" class="links">sergey Brin</a>
+                </div>
+           </div>
+       </div>
+       <h1>This is h1 text</h1>
+       <h2>This is h2 text</h2>
+       <h3>This is h3 text</h3>
+       <h4>This is h4 text</h4>
+       <h5>This is h5 text</h5>
+       <h6>This is h6 text</h6>  
+       <section id="left">
+            <h2>content</h2>
+            <p>good stuff</p>
+       </section> 
+       <aside id="right">
+            <h2>sidebar</h2>
+            <p>links</P>
+       </aside>                          
+
+
+    </body>
+</html>
